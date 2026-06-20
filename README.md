@@ -9,7 +9,6 @@ Live site: https://trishatalas.github.io/
 - HTML5
 - CSS3
 - JavaScript
-- Bootstrap Icons
 
 ## GitHub Pages
 
