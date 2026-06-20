@@ -1,6 +1,6 @@
 # TrishaTalas.github.io
 
-Static personal portfolio website for a Human-Computer Interaction final project.
+Static personal portfolio website for Trisha, a Network Administrator and IT Support Specialist.
 
 Live site: https://trishatalas.github.io/
 
@@ -9,7 +9,7 @@ Live site: https://trishatalas.github.io/
 - HTML5
 - CSS3
 - JavaScript
-- Bootstrap 5
+- Bootstrap Icons
 
 ## GitHub Pages
 

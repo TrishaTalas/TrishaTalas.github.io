@@ -1,39 +1,23 @@
-const yearElement = document.querySelector("#year");
-if (yearElement) {
-  yearElement.textContent = new Date().getFullYear();
+const header = document.querySelector(".site-header");
+const navLinks = document.querySelectorAll('a[href^="#"]');
+
+function setHeaderState() {
+  if (!header) return;
+  header.classList.toggle("is-scrolled", window.scrollY > 18);
 }
 
-const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
-const navbarCollapse = document.querySelector("#navbarLinks");
-
 navLinks.forEach((link) => {
-  link.addEventListener("click", () => {
-    if (window.bootstrap && navbarCollapse?.classList.contains("show")) {
-      bootstrap.Collapse.getOrCreateInstance(navbarCollapse).hide();
-    }
+  link.addEventListener("click", (event) => {
+    const targetId = link.getAttribute("href");
+    if (!targetId || targetId === "#") return;
+
+    const target = document.querySelector(targetId);
+    if (!target) return;
+
+    event.preventDefault();
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 });
 
-const contactForm = document.querySelector("#contactForm");
-const formStatus = document.querySelector("#formStatus");
-
-if (contactForm) {
-  contactForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-    event.stopPropagation();
-
-    if (!contactForm.checkValidity()) {
-      contactForm.classList.add("was-validated");
-      if (formStatus) {
-        formStatus.textContent = "Please complete the highlighted fields.";
-      }
-      return;
-    }
-
-    contactForm.reset();
-    contactForm.classList.remove("was-validated");
-    if (formStatus) {
-      formStatus.textContent = "Thanks. This static demo form is ready for a form service.";
-    }
-  });
-}
+setHeaderState();
+window.addEventListener("scroll", setHeaderState, { passive: true });
