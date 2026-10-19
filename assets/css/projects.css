@@ -1,0 +1,186 @@
+.projects-header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 50px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 20px;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
+.page-subtitle {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.project-count {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-family: monospace;
+}
+
+/* FOLDER GALLERY GRID */
+.folder-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+/* CONTAINER NG FOLDER */
+.folder-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+/* 1. LIKOD AT AKTWAL NA GRAY FOLDER */
+.mac-folder {
+  position: relative;
+  width: 100%;
+  height: 210px;
+  background: linear-gradient(180deg, #9ca3af 0%, #6b7280 100%); /* Gray gradient base */
+  border-radius: 14px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+  z-index: 3;
+  transition: transform 0.3s ease;
+}
+
+/* Ang Tab sa Itaas ng Folder */
+.mac-folder::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 110px;
+  height: 22px;
+  background: linear-gradient(180deg, #b0b7c0 0%, #9ca3af 100%);
+  border-radius: 8px 8px 0 0;
+}
+
+/* Ang Puting Papel sa Loob ng Folder (Gaya sa Larawan) */
+.folder-paper-peek {
+  position: absolute;
+  top: -6px;
+  left: 12px;
+  right: 12px;
+  height: 16px;
+  background: #ffffff;
+  border-radius: 6px 6px 0 0;
+  z-index: 2;
+  box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+/* PANGALAN NG FOLDER SA IBABA */
+.folder-label {
+  text-align: center;
+  margin-top: 14px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: 0.3px;
+}
+
+/* 2. ANG PROJECT PREVIEW CARD (Nakatago sa Loob) */
+.folder-hidden-card {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  right: 15px;
+  background: var(--surface-dark);
+  border: 1px solid var(--line-dark);
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 1;
+  opacity: 0;
+  transform: translateY(0) scale(0.95);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* 3. HOVER EFFECT: AANGAT ANG CARD AT PAPEL */
+.folder-wrapper:hover .folder-hidden-card {
+  opacity: 1;
+  transform: translateY(-115px) scale(1);
+  z-index: 5;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6);
+}
+
+.folder-wrapper:hover .mac-folder {
+  transform: translateY(5px);
+}
+
+.folder-wrapper:hover .folder-paper-peek {
+  transform: translateY(-8px);
+}
+
+/* Loob ng Preview Card */
+.card-image-wrapper {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  background: var(--graphite);
+}
+
+.card-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-info {
+  padding: 14px;
+  background: var(--surface-dark);
+}
+
+.card-info h3 {
+  color: var(--white);
+  font-size: 1.05rem;
+  margin: 0 0 4px 0;
+}
+
+.card-info p {
+  color: #c9cfd9;
+  font-size: 0.8rem;
+  margin: 0 0 12px 0;
+}
+
+.card-footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--line-dark);
+  padding-top: 10px;
+}
+
+.details-link {
+  color: #c9d7f7;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.details-link:hover {
+  text-decoration: underline;
+}
+
+.plus-icon {
+  display: grid;
+  width: 22px;
+  height: 22px;
+  place-items: center;
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  font-size: 0.75rem;
+}

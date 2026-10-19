@@ -3,227 +3,48 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Trisha Talas is a Network Administrator and IT Support Specialist focused on secure, scalable, and reliable network infrastructure.">
-    <meta name="theme-color" content="#08090b">
-    <meta property="og:title" content="Trisha Talas | Network Administrator & IT Support Specialist">
-    <meta property="og:description" content="Professional portfolio for network administration, IT support, infrastructure management, and cybersecurity-aware operations.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="assets/profile-pic/profile.jpg">
-    <title>Trisha Talas | Network Administrator & IT Support Specialist</title>
-    <link rel="preconnect" href="https://images.unsplash.com">
-    <link rel="preload" as="image" href="assets/profile-pic/profile.jpg">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Trisha Talas | BSIT Student</title>
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/index.css">
   </head>
   <body>
-    <a class="skip-link" href="#main-content">Skip to main content</a>
-
     <header class="site-header" data-header>
-      <div class="container header-shell">
-        <a class="brand" href="#home" aria-label="Trisha Talas home">
-          <img src="assets/profile-pic/Trisha_Talas_logo.png" width="346" height="304" alt="Trisha Talas logo">
-          <span class="brand-copy">
-            <strong>Trisha Talas</strong>
-            <span>Network Administrator</span>
-          </span>
-        </a>
+  <div class="container header-shell">
+    
+    <!-- Logo sa Pinaka-Kaliwa -->
+    <a class="brand" href="index.html" aria-label="Trisha Talas home">
+      <img src="assets/profile-pic/Trisha_Talas_logo.png" alt="Trisha Talas logo">
+    </a>
 
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation" data-nav-toggle>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </button>
+    <!-- Single Glass Capsule Nav sa Gitna (Kasama na ang Contact!) -->
+    <nav id="site-nav" class="site-nav" aria-label="Primary navigation" data-nav>
+      <a href="projects.html">Projects</a>
+      <a href="about.html" >About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
 
-        <nav id="site-nav" class="site-nav" aria-label="Primary navigation" data-nav>
-          <a href="#home">Home</a>
-          <a href="#services">Services</a>
-          <a href="#projects">Projects</a>
-          <a href="#about">About</a>
-          <a href="#technologies">Technologies</a>
-          <a href="#contact">Contact</a>
-        </nav>
-
-        <a class="header-cta" href="#contact">Contact</a>
-      </div>
-    </header>
+  </div>
+</header>
 
     <main id="main-content">
-      <section id="home" class="hero-section" aria-labelledby="hero-title">
+      <section class="hero-section">
         <div class="container hero-grid">
-          <div class="hero-copy" data-animate>
-            <p class="eyebrow">Network Administration & IT Support</p>
-            <h1 id="hero-title">Trisha Talas</h1>
-            <p class="hero-role">Network Administrator & IT Support Specialist</p>
-            <p class="hero-text">Building secure, scalable, and reliable network infrastructures. Passionate about network security, system administration, troubleshooting, and delivering dependable IT solutions.</p>
-            <div class="button-row" aria-label="Primary actions">
-              <a class="button button-primary" href="#projects">View Projects</a>
-              <a class="button button-secondary" href="#contact">Contact Me</a>
+          <div class="hero-copy">
+            <p class="eyebrow">BSIT Student & Technology Enthusiast</p>
+            <h1>Hi, I'm Trisha Talas</h1>
+            <p class="hero-role">Networking & Backend Development</p>
+            <p class="hero-text">Currently a 3rd-year BS IT student passionate about building functional web applications, managing backend logic, and configuring reliable network setups.</p>
+            
+            <div class="button-row">
+              <a class="button button-primary" href="projects.html">View My Projects -&gt;</a>
+              <a class="button button-secondary" href="contact.html">Get in Touch -&gt;</a>
             </div>
           </div>
 
-          <div class="hero-media" data-animate>
+          <div class="hero-media">
             <figure class="profile-frame">
-              <img src="assets/profile-pic/profile.jpg" width="1496" height="1708" alt="Professional profile portrait of Trisha Talas." fetchpriority="high" decoding="async">
+              <img src="assets/profile-pic/profile.jpg" alt="Trisha Talas">
             </figure>
-          </div>
-        </div>
-      </section>
-
-      <section class="stats-section" aria-labelledby="stats-title">
-        <div class="container">
-          <h2 id="stats-title" class="sr-only">Professional statistics</h2>
-          <dl class="stats-grid">
-            <div class="stat-card" data-animate>
-              <dt>3+</dt>
-              <dd>Years Experience</dd>
-            </div>
-            <div class="stat-card" data-animate>
-              <dt>50+</dt>
-              <dd>Network Deployments</dd>
-            </div>
-            <div class="stat-card" data-animate>
-              <dt>99%</dt>
-              <dd>System Uptime</dd>
-            </div>
-            <div class="stat-card" data-animate>
-              <dt>20+</dt>
-              <dd>Clients Supported</dd>
-            </div>
-          </dl>
-        </div>
-      </section>
-
-      <section id="services" class="section services-section" aria-labelledby="services-title">
-        <div class="container">
-          <div class="section-heading" data-animate>
-            <p class="eyebrow">Services</p>
-            <h2 id="services-title">Practical IT services for stable daily operations.</h2>
-            <p>Network and support capabilities focused on clean configuration, secure access, fast troubleshooting, and dependable infrastructure.</p>
-          </div>
-
-          <div class="services-grid" aria-label="IT services">
-            <article class="service-card" data-animate>
-              <span>01</span>
-              <h3>Network Configuration</h3>
-              <p>Structured setup for routers, switches, wireless access, IP addressing, and clear network documentation.</p>
-            </article>
-            <article class="service-card" data-animate>
-              <span>02</span>
-              <h3>Routing & Switching</h3>
-              <p>Connectivity planning, switching support, path troubleshooting, and reliable traffic flow across the network.</p>
-            </article>
-            <article class="service-card" data-animate>
-              <span>03</span>
-              <h3>VLAN Management</h3>
-              <p>Logical network segmentation for departments, guests, devices, and safer operational boundaries.</p>
-            </article>
-            <article class="service-card" data-animate>
-              <span>04</span>
-              <h3>Network Security</h3>
-              <p>Firewall rules, access control, basic hardening, monitoring awareness, and security-focused configuration.</p>
-            </article>
-            <article class="service-card" data-animate>
-              <span>05</span>
-              <h3>Windows & Linux Administration</h3>
-              <p>Server checks, user access support, permissions, shared resources, service health, and routine maintenance.</p>
-            </article>
-            <article class="service-card" data-animate>
-              <span>06</span>
-              <h3>IT Support & Troubleshooting</h3>
-              <p>Help desk support for endpoint issues, connectivity problems, accounts, printers, software, and user workflows.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" class="section projects-section" aria-labelledby="projects-title">
-        <div class="container">
-          <div class="section-heading section-heading-light" data-animate>
-            <p class="eyebrow">Portfolio Projects</p>
-            <h2 id="projects-title">Networking and infrastructure project examples.</h2>
-            <p>Realistic project areas that reflect secure access, reliable connectivity, maintainable systems, and responsive support work.</p>
-          </div>
-
-          <div class="projects-grid">
-            <article class="project-card project-card-featured" data-animate>
-              <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" width="1200" height="800" alt="Data center racks used to represent enterprise network deployment." loading="lazy" decoding="async">
-              <div class="project-content">
-                <p class="project-label">Network Deployment</p>
-                <h3>Enterprise Network Deployment</h3>
-                <p>Planned and implemented a reliable office network foundation with device configuration, IP addressing, connectivity checks, and handoff documentation for future maintenance.</p>
-                <ul class="tag-list" aria-label="Project focus">
-                  <li>LAN/WAN</li>
-                  <li>Switching</li>
-                  <li>Documentation</li>
-                </ul>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="about" class="section about-section" aria-labelledby="about-title">
-        <div class="container about-grid">
-          <div class="section-heading section-heading-compact" data-animate>
-            <p class="eyebrow">About</p>
-            <h2 id="about-title">Infrastructure-minded support with a security-first approach.</h2>
-          </div>
-          <div class="about-copy" data-animate>
-            <p>Trisha Talas is a Network Administrator and IT Support Specialist focused on keeping organizations connected, productive, and protected. Her work centers on network configuration, infrastructure management, Windows and Linux support, technical troubleshooting, and practical cybersecurity awareness.</p>
-            <p>She approaches IT with clear documentation, calm problem-solving, and continuous learning. From VLAN planning and server checks to endpoint issues and user support, her goal is to reduce downtime, improve reliability, and make technology easier for teams to depend on.</p>
-            <div class="focus-grid" aria-label="Professional focus areas">
-              <div>
-                <strong>Network Reliability</strong>
-                <span>Stable connectivity, clean configuration, and manageable infrastructure.</span>
-              </div>
-              <div>
-                <strong>Security Awareness</strong>
-                <span>Access control, safe configuration habits, and risk-aware support.</span>
-              </div>
-              <div>
-                <strong>Responsive Support</strong>
-                <span>Structured troubleshooting, clear updates, and practical resolution steps.</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="technologies" class="section technologies-section" aria-labelledby="technologies-title">
-        <div class="container technologies-grid">
-          <div class="section-heading section-heading-compact" data-animate>
-            <p class="eyebrow">Trusted Technologies</p>
-            <h2 id="technologies-title">Tools and platforms aligned with modern IT operations.</h2>
-          </div>
-          <ul class="technology-list" aria-label="Networking technologies" data-animate>
-            <li>Cisco</li>
-            <li>MikroTik</li>
-            <li>Windows Server</li>
-            <li>Linux</li>
-            <li>VMware</li>
-            <li>pfSense</li>
-            <li>VLAN</li>
-            <li>TCP/IP</li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="contact" class="section contact-section" aria-labelledby="contact-title">
-        <div class="container contact-grid">
-          <div class="contact-copy" data-animate>
-            <p class="eyebrow">Contact</p>
-            <h2 id="contact-title">Let's keep your network steady.</h2>
-            <p>Reach out for network administration, IT support, infrastructure troubleshooting, or project collaboration.</p>
-          </div>
-
-          <div class="contact-list" aria-label="Contact links">
-            <a class="contact-card" href="mailto:talastrisha@gmail.com" data-animate>
-              <span>Email</span>
-              <strong>talastrisha@gmail.com</strong>
-            </a>
-            <a class="contact-card" href="https://github.com/TrishaTalas" target="_blank" rel="noopener" data-animate>
-              <span>GitHub</span>
-              <strong>github.com/TrishaTalas</strong>
-            </a>
           </div>
         </div>
       </section>
@@ -231,16 +52,10 @@
 
     <footer class="site-footer">
       <div class="container footer-shell">
-        <a class="footer-brand" href="#home" aria-label="Back to top">
-          <span class="footer-logo">
-            <img src="assets/profile-pic/Trisha_Talas_logo.png" width="346" height="304" alt="">
-          </span>
-          <span>Trisha Talas</span>
-        </a>
-        <p>Network Administrator & IT Support Specialist</p>
+        <a class="footer-brand" href="index.html">Trisha Talas</a>
+        <p>BSIT Student | Networking & Backend Development</p>
       </div>
     </footer>
-
     <script src="assets/js/main.js"></script>
   </body>
 </html>

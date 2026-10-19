@@ -1,0 +1,136 @@
+/* ==========================================================================
+   EDITORIAL ABOUT PAGE (Light Minimal Palette - White & Gray)
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&display=swap');
+
+.editorial-about-section {
+  width: 100%;
+  flex: 1 1 auto;
+  padding: 40px 0 60px 0;
+  background-color: #ffffff; /* Purong puti ang background */
+  color: #0f172a;            /* Maitim/Slate ang pangunahing text */
+  display: flex;
+  align-items: center;
+}
+
+.editorial-container {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Top Decorative Bar */
+.editorial-top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 0.85rem;
+  color: #64748b;
+  letter-spacing: 0.5px;
+}
+
+.barcode-strip {
+  width: 85px;
+  height: 18px;
+  background: repeating-linear-gradient(
+    90deg,
+    #0f172a,
+    #0f172a 2px,
+    transparent 2px,
+    transparent 4px
+  );
+}
+
+/* Giant Headline Style */
+.giant-header {
+  line-height: 0.85;
+  margin-bottom: 36px;
+}
+
+.giant-text {
+  font-family: var(--font-main);
+  font-size: clamp(4.5rem, 13vw, 9.5rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: #0f172a;
+  display: block;
+}
+
+.giant-bottom-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Rounded Photo Badge Katabi ng Text */
+.photo-badge {
+  width: clamp(130px, 24vw, 230px);
+  height: clamp(75px, 13vw, 115px);
+  background: #f1f5f9;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 35px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+  margin-top: 8px;
+}
+
+.photo-badge img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Content Grid Layout */
+.editorial-content-grid {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+  gap: 40px;
+  align-items: flex-end;
+}
+
+.editorial-copy h2 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 700;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+  color: #0f172a;
+}
+
+.editorial-copy p {
+  font-size: clamp(0.95rem, 1.8vw, 1.08rem);
+  line-height: 1.6;
+  color: #475569; /* Malambot na dark gray para sa descriptions */
+  margin-bottom: 16px;
+}
+
+/* Cursive Signature Accent */
+.signature-accent {
+  font-family: 'Caveat', cursive;
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  color: #334155;
+  transform: rotate(-8deg);
+  text-align: right;
+  user-select: none;
+  padding-bottom: 10px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .editorial-content-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .giant-bottom-row {
+    gap: 12px;
+  }
+
+  .signature-accent {
+    text-align: left;
+    transform: rotate(-4deg);
+  }
+}
